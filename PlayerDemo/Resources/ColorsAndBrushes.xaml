@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:PlayerDemo.Resources">
+    <Color x:Key="DefaultBlueGrey" R="49" G="49" B="65" A="255"/> 
+    <Color x:Key="DarkBlueGrey" R="41" G="41" B="56" A="255"/>
+    <Color x:Key="BorderDarkBlueGrey" R="19" G="19" B="29" A="255"/>
+    <Color x:Key="BorderBlueGrey" R="61" G="61" B="76" A="255"/>
+    <Color x:Key="DefaultTextColor" R="200" G="200" B="218" A="255"/>
+    <Color x:Key="OtherTextColor" A="255" G="109" R="109" B="119"/>
+    <Color x:Key="DefaultWhite" A="255" R="228" G="228" B="239"/>
+    <Color x:Key="ListBoxBackground" A="255" R="41" G="41" B="56"/>
+    <Color x:Key="ListBoxOuterBorder" A="255" R="32" G="32" B="44"/>
+    <Color x:Key="ListBoxInnerBorder" A="255" R="48" G="48" B="62"/>
+    
+    <Color x:Key="SongExplorerFontColor" A="255" R="68" G="68" B="68"/>
+    <Color x:Key="OtherSongExplorerColor" A="255" R="167" G="167" B="168"/>
+    
+    <Color x:Key="DefaultShadowColor" A="0" R="0" G="0" B="0"/>
+    
+    
+    <SolidColorBrush x:Key="DefaultBlueGreyBrush" Color="{StaticResource DefaultBlueGrey}"/>
+    <SolidColorBrush x:Key="DarkBlueGreyBrush" Color="{StaticResource DarkBlueGrey}"/>
+    <SolidColorBrush x:Key="BorderDarkBlueGreyBrush" Color="{StaticResource BorderDarkBlueGrey}"/>
+    <SolidColorBrush x:Key="DefaultTextColorBrush" Color="{StaticResource DefaultTextColor}"/>
+    <SolidColorBrush x:Key="OtherTextColorBrush" Color="{StaticResource OtherTextColor}"/>
+    <SolidColorBrush x:Key="BorderBlueGreyBrush" Color="{StaticResource BorderBlueGrey}"/>
+    <SolidColorBrush x:Key="DefaultWhiteBrush" Color="{StaticResource DefaultWhite}"/>
+    <SolidColorBrush x:Key="ListBoxBackgroundBrush" Color="{StaticResource ListBoxBackground}"/>
+    <SolidColorBrush x:Key="ListBoxOuterBorderBrush" Color="{StaticResource ListBoxOuterBorder}"/>
+    <SolidColorBrush x:Key="ListBoxInnerBorderBrush" Color="{StaticResource ListBoxInnerBorder}"/>
+    
+    <SolidColorBrush x:Key="SongExplorerFontBrush" Color="{StaticResource SongExplorerFontColor}"/>
+    <SolidColorBrush x:Key="OtherSongExplorerBrush" Color="{StaticResource OtherSongExplorerColor}"/>
+    
+    <SolidColorBrush x:Key="DefaultShadowBrush" Color="{StaticResource DefaultShadowColor}"/>
+</ResourceDictionary>

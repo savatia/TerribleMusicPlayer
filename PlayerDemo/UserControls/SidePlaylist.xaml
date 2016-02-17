@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="PlayerDemo.UserControls.SidePlaylist"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PlayerDemo.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="12*"/>
+        </Grid.RowDefinitions>
+        <Border BorderBrush="{StaticResource BorderDarkBlueGreyBrush}" BorderThickness="1">
+            <Border BorderBrush="{StaticResource BorderBlueGreyBrush}" BorderThickness="1">
+
+            </Border>
+        </Border>
+        <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Center" >
+            <Button Content="SAVE" />
+            <Button Content="CLEAR"/>
+            <Button Content="HIDE"/>
+        </WrapPanel>
+        <ListBox Style="{StaticResource SidePlaylistStyle}" ItemsSource="{Binding AppPresenter.Playlist }" Grid.Row="1" Width="300"/>
+    </Grid>
+</UserControl>

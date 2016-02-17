@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:PlayerDemo.Resources">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="DefaultButtonStyle.xaml"/> 
+        <ResourceDictionary Source="SidePlaylistStyle.xaml"/>
+        <ResourceDictionary Source="SongExplorerButtonStyle.xaml"/>
+        <ResourceDictionary Source="DefaultTrack.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    
+</ResourceDictionary>

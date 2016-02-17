@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="PlayerDemo.Views.AlbumView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PlayerDemo.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <ListView Background="{StaticResource DefaultWhiteBrush}" x:Name="allsongslist" ItemsSource="{Binding AlbumSongs}"  MouseDoubleClick="PlaySong">
+            <ListView.View>
+                <GridView  >
+                    <GridViewColumn  Header="Title">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Title}" FontWeight="SemiBold" Foreground="{StaticResource SongExplorerFontBrush}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn  Header="Artist">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Artist}" FontWeight="SemiBold" Foreground="{StaticResource SongExplorerFontBrush}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn  Header="Album">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Album}" FontWeight="SemiBold" Foreground="{StaticResource SongExplorerFontBrush}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn  Header="Length">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding FormattedLength}" FontWeight="SemiBold" Foreground="{StaticResource SongExplorerFontBrush}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridView.ColumnHeaderContainerStyle>
+                        <Style TargetType="{x:Type GridViewColumnHeader}">
+                            <Setter Property="Background" Value="{StaticResource DefaultWhiteBrush}"/>
+                            <Setter Property="Foreground" Value="{StaticResource SongExplorerFontBrush}"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="BorderThickness" Value="0"/>
+                        </Style>
+                    </GridView.ColumnHeaderContainerStyle>
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</UserControl>
